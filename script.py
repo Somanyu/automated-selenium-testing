@@ -102,10 +102,13 @@ def contactus_page():
     print("Test 9 PASSED!!")
 
     driver.execute_script("window.scroll(0, 0);")
-    
+
     action = ActionChains(driver)
-    link = driver.find_element_by_link_text("Internships at Internshala")
-    action.move_to_element(link).perform()
+    link1 = driver.find_element_by_link_text("GRIP (Internship)")
+    link2 = driver.find_element_by_link_text("Student Scholarship Program")
+
+    action.move_to_element(link1).perform()
+    action.move_to_element(link2).perform()
     print("Test 10 PASSED!!")
 
 
