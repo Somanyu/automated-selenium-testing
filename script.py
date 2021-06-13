@@ -112,9 +112,9 @@ def contactus_page():
     print("Test 10 PASSED!!")
 
 
-
-main_page()
-policy_page()
-scholarship_page()
-joinus_page()
-contactus_page()
+if __name__ == "__main__":
+    main_page()
+    policy_page()
+    scholarship_page()
+    joinus_page()
+    contactus_page()
